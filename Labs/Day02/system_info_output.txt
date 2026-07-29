@@ -1,0 +1,20 @@
+========================================
+       SYSTEM INFORMATION DASHBOARD
+========================================
+Current User:           usama
+Hostname:               DESKTOP-N7NP5CC
+Current Working Dir:    /home/usama/CyberJourney
+Kernel / OS Version:    Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.42
+Python Version:         3.13.12
+CPU Cores (Physical):   2
+CPU Cores (Total):      4
+CPU Usage:              4.5%
+Total Memory:           3.78 GB
+Available Memory:       2.32 GB (38.7% used)
+Total Disk Space:       1006.85 GB
+Disk Usage:             4.13 GB (0.4%)
+IP Addresses:
+  - lo: 127.0.0.1
+  - eth0: 172.29.89.170
+Current System Time:    2026-07-29 17:14:43
+========================================
