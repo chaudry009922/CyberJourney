@@ -1,0 +1,25 @@
+==========================
+PROCESS ANALYSIS REPORT
+==========================
+
+Date: 2026-07-29
+
+Objective:
+Learn how Linux manages running processes.
+
+Commands Used:
+- ps
+- ps aux
+- top
+- kill
+- htop (if installed)
+
+Observations:
+- Every running program is represented as a process.
+- Each process has a unique Process ID (PID).
+- The 'ps' command displays currently running processes.
+- The 'top' command provides a live view of CPU and memory usage.
+- The 'kill' command is used to terminate a process using its PID.
+
+Conclusion:
+Understanding Linux processes is essential for system administration and SOC operations because analysts often investigate suspicious or resource-intensive processes.
