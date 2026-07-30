@@ -1,0 +1,17 @@
+Network Scan Report
+
+Network:
+172.29.80.0/20
+
+Hosts Found
+
+172.29.80.1
+
+172.29.89.170
+
+Port Scan
+
+All scanned ports were filtered.
+
+Date:
+30 July 2026
