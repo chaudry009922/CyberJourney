@@ -1,0 +1,15 @@
+ip addr
+
+ip route
+
+hostname
+
+hostname -I
+
+ping -c 4 172.29.80.1
+
+nmap -sn 172.29.80.0/20
+
+nmap -sV 172.29.89.170
+
+nmap -O 172.29.89.170

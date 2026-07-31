@@ -1,0 +1,66 @@
+==============================
+DAY 04 NETWORK SCAN RESULTS
+==============================
+
+Hostname:
+DESKTOP-N7NP5CC
+
+IP Address:
+172.29.89.170
+
+Gateway:
+172.29.80.1
+
+Subnet:
+172.29.80.0/20
+
+----------------------------------
+
+Host Discovery
+
+Command:
+nmap -sn 172.29.80.0/20
+
+Hosts Found:
+
+172.29.80.1
+
+172.29.89.170
+
+----------------------------------
+
+Service Detection
+
+Command:
+nmap -sV 172.29.89.170
+
+Result:
+
+No open ports detected
+
+1000 TCP Ports Filtered
+
+----------------------------------
+
+OS Detection
+
+Command:
+nmap -O 172.29.89.170
+
+Result:
+
+OS fingerprint unavailable
+
+Reason:
+
+All ports filtered
+
+----------------------------------
+
+Observations
+
+WSL networking limits incoming traffic.
+
+Windows Firewall filtered packets.
+
+No vulnerable services were exposed.
