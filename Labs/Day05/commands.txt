@@ -1,0 +1,150 @@
+==============================
+Day 05 - Commands Used
+Topic: Passive Web Reconnaissance
+==============================
+
+# Create Day 5 Lab Directory
+
+mkdir -p Labs/Day05
+
+# Create Lab Files
+
+touch Labs/Day05/recon_notes.md
+touch Labs/Day05/commands.txt
+touch Labs/Day05/report.md
+
+--------------------------------------------------
+
+# Display Current Working Directory
+
+pwd
+
+Purpose:
+Shows the current directory.
+
+--------------------------------------------------
+
+# List Files
+
+ls
+
+Purpose:
+Displays files and folders in the current directory.
+
+--------------------------------------------------
+
+# DNS Lookup
+
+nslookup example.com
+
+Purpose:
+Resolves a domain name into one or more IP addresses.
+
+Output:
+example.com
+104.20.23.154
+172.66.147.243
+
+--------------------------------------------------
+
+# Test Network Connectivity
+
+ping -c 4 example.com
+
+Purpose:
+Checks if the host is reachable and measures latency.
+
+--------------------------------------------------
+
+# View HTTP Response Headers
+
+curl -I https://example.com
+
+Purpose:
+Displays only the HTTP response headers.
+
+Important Headers Observed:
+
+HTTP/2 200
+Server: cloudflare
+Content-Type: text/html
+CF-Cache-Status: HIT
+
+--------------------------------------------------
+
+# Check robots.txt
+
+curl https://example.com/robots.txt
+
+Purpose:
+Checks whether the website publishes crawler rules or hidden directories.
+
+Observation:
+No robots.txt file was found.
+The default webpage was returned.
+
+--------------------------------------------------
+
+# Check security.txt
+
+curl https://example.com/.well-known/security.txt
+
+Purpose:
+Checks for vulnerability disclosure and security contact information.
+
+Observation:
+No security.txt file was found.
+The default webpage was returned.
+
+--------------------------------------------------
+
+# Activate Python Virtual Environment
+
+source ~/CyberJourney/venv/bin/activate
+
+Purpose:
+Activates the project's isolated Python environment.
+
+--------------------------------------------------
+
+# Install Python Package
+
+pip install requests
+
+Purpose:
+Installs the Requests library for making HTTP requests.
+
+--------------------------------------------------
+
+# Verify Installed Packages
+
+pip list
+
+Purpose:
+Lists all installed Python packages in the virtual environment.
+
+--------------------------------------------------
+
+# Run Python Recon Tool
+
+cd ~/CyberJourney/Python
+
+python web_recon.py
+
+Purpose:
+Runs the custom Web Recon Scanner developed during this lab.
+
+--------------------------------------------------
+
+Summary
+
+Skills Practiced:
+
+- Linux Command Line
+- DNS Lookup
+- Network Connectivity Testing
+- HTTP Header Analysis
+- Passive Reconnaissance
+- Python Virtual Environments
+- Python Package Management
+- Running Custom Security Tools
