@@ -52,3 +52,29 @@ ip = resolve_ip(target.replace("https://","").replace("http://",""))
 print("IP Address :", ip)
 
 get_headers(url)
+
+important_headers = [
+
+"Content-Security-Policy",
+
+"X-Frame-Options",
+
+"Strict-Transport-Security",
+
+"Referrer-Policy",
+
+"Permissions-Policy"
+
+]
+
+print("\nSecurity Headers")
+
+for h in important_headers:
+
+    if h in response.headers:
+
+        print(f"[FOUND] {h}")
+
+    else:
+
+        print(f"[MISSING] {h}")
